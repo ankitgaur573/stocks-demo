@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+<meta content="utf-8" http-equiv="encoding">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script type='text/javascript' src="/static/render.js"></script>
+</head>
+<body>
+
+<h3>Stocks Mock</h3>
+<button id="searchBt">Click Me To Search Company</button>
+<input id="search" name="search" placeholder="company2", value="company2">
+<!-- <p>Click Any Symbol</p> -->
+<section class="container" style="display: flex">
+        <div class="one" style="flex: 0 0 65%; width: 50%">
+                <table class="flexme" id="tableForList" border="1" style="margin-top: 10px">
+                        <thead>
+                          <tr>
+                            <th>Symbol</th>
+                            <th>Current</th>
+                            <th>Open</th>
+                            <th>High</th>     
+                            <th>Low</th>
+                            <th>Change From Open</th>
+                            <th>Percent Change From Open</th>     
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr id="test">
+                            <td></td>
+                          </tr>
+                         </tbody>
+                      </table>
+        </div>
+        <div class="two" style="flex: 1; width: 40%; height: 100px">
+
+                <p>Top Gainers</p>  
+                <table id="tableForGainers" border="1">
+                    <thead>
+                        <tr>
+                        <th>Symbol</th>
+                        <th>Current</th>
+                        <th>Open</th>
+                        <th>Change From Open</th>
+                        <th>Percent Change From Open</th>     
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr id="test">
+                        <td></td>
+                        </tr>
+                        </tbody>
+                </table>
+                <p>Top Losers</p>  
+                <table id="tableForLosers" border="1">
+                    <thead>
+                        <tr>
+                        <th>Symbol</th>
+                        <th>Current</th>
+                        <th>Open</th>
+                        <th>Change From Open</th>
+                        <th>Percent Change From Open</th>     
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr id="test">
+                        <td></td>
+                        </tr>
+                        </tbody>
+                </table>
+
+        </div>
+</section>
+
+  <p>Click on any symbol to paint the chart</p>
+  <div id="chartContainer" style="height: 300px; width: 50%; padding-top: 20px"></div>
+    <script src="https://canvasjs.com/assets/script/jquery-1.11.1.min.js"></script>
+    <script src="https://canvasjs.com/assets/script/jquery.canvasjs.min.js"></script>
+</body>
+</html> 
